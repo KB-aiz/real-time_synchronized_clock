@@ -1,17 +1,17 @@
 /* Layout */
 .main {
     display: flex;
-    flex-direction: column; /* Updated to maintain order */
+    flex-direction: column;
     padding: 2em;
     height: 90vh;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Horizontally center items */
+    justify-content: center;
+    align-items: center;
 }
 
 body {
     margin: 0; /* Reset default margin */
     background-image: url('https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=900&t=st=1708105665~exp=1708106265~hmac=85babd06c80be8128476cac1ad1ec5a6b2957ec98592119a0f3e86bedf88b784');
-    background-size: cover; /* Adjust according to your preference */
+    background-size: cover; 
 }
 
 .clockbox,
@@ -81,8 +81,8 @@ body {
     background-color: #14c0f8;
     position: relative;
     padding: 20px;
-    order: 2; /* Set the order to 2 for the digital clock */
-    margin-top: 25px; /* Adjust the top margin as needed */
+    order: 2; 
+    margin-top: 25px; 
 }
 
 .digitalclocknumber {
