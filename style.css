@@ -1,0 +1,93 @@
+/* Layout */
+.main {
+    display: flex;
+    flex-direction: column; /* Updated to maintain order */
+    padding: 2em;
+    height: 90vh;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Horizontally center items */
+}
+
+body {
+    margin: 0; /* Reset default margin */
+    background-image: url('https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?w=900&t=st=1708105665~exp=1708106265~hmac=85babd06c80be8128476cac1ad1ec5a6b2957ec98592119a0f3e86bedf88b784');
+    background-size: cover; /* Adjust according to your preference */
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+    margin: auto;
+    order: 1;
+}
+
+/* Clock styles */
+.circle {
+    fill: #e55013;
+    stroke: #2a2929;
+    stroke-width: 75;
+    stroke-miterlimit: 10;
+    stroke-opacity: 0.75;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #130d19;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #130d19;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #130d19;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #ffffff;
+}
+
+.hour-marks {
+    fill: none;
+    stroke: #fed9a3;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.digitalclockbox {
+    width: 50%;
+    background-color: #14c0f8;
+    position: relative;
+    padding: 20px;
+    order: 2; /* Set the order to 2 for the digital clock */
+    margin-top: 25px; /* Adjust the top margin as needed */
+}
+
+.digitalclocknumber {
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    color: #113451;
+}
